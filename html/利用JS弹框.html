@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用JS弹框</title>
+    <script>
+        function showDialog(chooseNum) {
+            switch (chooseNum){
+                case 1:
+                    alert("你想干嘛!");
+                    break;
+                case 2:
+                    // confirm()会返回 一个布尔值.代表选择的是确定还是取消
+                    if(confirm("是否继续?")){
+                        alert("选择了确定");
+                    }else{
+                        alert("选择了取消")
+                    }
+                    break;
+                case 3:
+                    var value = prompt("请输入","这是默认显式的内容");
+                    if (value == null){
+                        alert("什么也没输入");
+                        return ;
+                    }
+                    alert("输入内容:\t" + value);
+                    break;
+                default:
+                    break;
+            }
+        }
+    </script>
+</head>
+<body>
+
+<input type="button" value="弹普通框" onclick="showDialog(1)"> <br>
+<input type="button" value="弹确认框" onclick="showDialog(2)"> <br>
+<input type="button" value="弹输入框" onclick="showDialog(3)"> <br>
+</body>
+</html>

@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用ＪＳ向页面写入内容</title>
+</head>
+<body>
+    <button onclick="function doClick() {
+            // 浏览器会重新渲染,把之前的内容覆盖掉
+            document.write('明天怎么样谁也不知道!');
+    }
+    doClick()">Click ME !</button>
+</body>
+</html>

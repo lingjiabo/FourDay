@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过JS找HTML元素-2</title>
+    <script>
+        function doFind() {
+            //-- 因为3个div都有相同的class
+            var elements = document.getElementsByClassName("dd");
+            for (var i = 0 ;i < elements.length ;i ++){
+                console.log(elements[i].innerHTML);
+                // alert(elements[i].innerHTML);
+            }
+        }
+
+
+    </script>
+</head>
+<body>
+
+<div class="dd">AA</div>
+<div class="dd">BB</div>
+<div class="dd">CC</div>
+<div class="dd">DD</div>
+<div class="dd">EE</div>
+<div class="dd">FF</div>
+<input type="button" onclick="doFind()" value="找控件">
+</body>
+</html>

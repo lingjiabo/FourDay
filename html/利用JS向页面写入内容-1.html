@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>利用ＪＳ向页面写入内容</title>
+    <script>
+        function doLoadOver() {
+            alert("加载完成!");
+        }
+    </script>
+</head>
+<body onload="doLoadOver()">
+<br>
+Second
+<script>
+    document.write("First");
+</script>
+</body>
+</html>

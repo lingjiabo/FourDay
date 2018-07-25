@@ -1,0 +1,139 @@
+# JavaScript
+
+## JavaScript历史
+1.  1992年Nonbas 开发的C--(Minus-Minus)更名为Scriptease
+2.  1995年NetScape 开发的LiveScript.期初没有名气.但是Java很有名气,所以NetScape和SUN公司协商
+借用Java的名声.抬高自己的名字.把LiveScript更名为JavaScript实际上.和Java一点关系都没的.
+3.  Microsoft 在操作系统上绑定了IE ,从IE3.0开始搭载了JavaScript的克隆版.叫做JScript.
+4.  1997年ECMA(欧洲计算机制造商协会).第39技术委员会TC39 对上面三个进行标准化,通用化得到ECMA262.并命名为ECMAScript
+
+## JavaScript的组成
+1.  核心              ECMAScript
+    *   语法
+    *   类型
+    *   语句
+    *   关键字
+    *   保留字
+    *   运算符
+    *   对象
+2.  文档对象模型      DOM   D Document Object Model
+    *   针对文档进行操作
+3.  浏览器对象模型    BOM   B Browser Object Model
+    *   弹出新的浏览器窗口
+    *   移动关闭浏览器窗口以及调整大小
+    *   和屏幕相关的对象信息.比如屏幕的分辨率
+    *   Web浏览器的详细信息
+    
+## JS HTML CSS的关系
+1.  HTML负责呈现内容,提供基本框架
+2.  CSS负责美颜
+3.  JS负责交互
+
+## JS的开发步骤
+> 一般做JS开发都会遵守以下几个流程
+
+1.  确定事件
+2.  在事件中调用JS的函数
+3.  在函数中操作页面元素来完成交互
+    *   根据ID或者Class或者Tag等.找到元素
+    *   修改元素的属性.属性包括样式.
+
+## JS写在哪里
+1.  写在HEAD中
+2.  写在Body中
+3.  和CSS一样通过链接外部JS文件
+
+
+## 基本语法
+### 数据类型
+JS的数据类型有两种
+1.  Primitive Type 原生/原始数据类型
+    *   undefined   未定义的数据类型/未知
+    *   null        空
+    *   boolean     布尔类型 true 和 false
+    *   number      数值 整型和浮点
+    *   string      字符串
+2.  Class          引用数据类型
+    *   内置对象
+        *   Object对象
+        *   Boolean对象
+        *   Number对象
+        *   String对象
+        *
+        *   Function对象  所有的函数
+        *   Array对象     所有的数组
+        *   Date对象      所有的日期
+        *   RegExp对象    所有的正则表达式
+        *   Error对象     所有的错误  
+    *   自定义对象
+ 
+ 
+ 
+### 变量声明
+JS是弱类型语言.指变量声明时可以不指明类型.在JS中声明所有内容都使用:var.甚至可以直接使用未声明过的变量.
+考虑规范和后续的代码维护.不推荐直接使用未声明变量
+```javascript
+var i = 10
+var i = "abc"
+i = true
+```
+
+JS中的所有语句默认是可以不用加分号的.当然也可以加分号..建议把分号写上.
+
+### 输出方式
+1.  利用Console.log打印输出类似于JAVA中的System.out.println();
+2.  利用弹框    
+    *   alter(Message) 
+    *   confirm(Mesage)  返回布尔值代表选择确定还是取消
+    *   prompt(Message)  返回字符串代表输入的内容.如果为null为不输入.
+3.  document.write(Message)    
+    *   如果在文档已完成加载后执行 document.write，整个 HTML 页面将被覆盖 切忌
+
+### JS中的变量
+JS是弱类型语言在声明时只是不强调数据类型。但是变量名还是要符合规范的，具体规范
+1.  区分大小写
+2.  必须字母开头
+3.  特殊符号只可以使用 & 和 _
+4.  不可以使用关键字和保留字
+5.  所有的声明都是用var
+    
+  
+
+
+
+
+
+
+
+# 课堂练习
+１。利用ＪＳ实现计算器
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+
+JavaScript只有一款是服务端语言Node.js.剩下的所有JS都是客户端语言.

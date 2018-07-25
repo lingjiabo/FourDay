@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>通过JS找HTML元素</title>
+    <style>
+        div{
+            border: 1px solid red;
+        }
+
+    </style>
+    <script>
+        // 把Div的内容修改掉
+        /*
+            把Div的内容替换成.这是被替换后的Div
+         */
+        function doDiv() {
+            //-- 找一个元素.因为ID是唯一的.
+            var element = document.getElementById("dd");
+            element.innerText = "<ul style=\"list-style: none\">\n" +
+                "    <li style=\"display: inline\">第一项</li>\n" +
+                "    <li style=\"display: inline\">第二项</li>\n" +
+                "    <li style=\"display: inline\">第三项</li>\n" +
+                "    <li style=\"display: inline\">第四项</li>\n" +
+                "</ul>";
+        }
+    </script>
+</head>
+<body>
+
+<div id="dd">
+    这是一个JS操作元素的测试
+</div>
+<!--当Button被单击的时候操作Div-->
+<input type="button" onclick="doDiv()" value="操作Div"> <br>
+</body>
+</html>
